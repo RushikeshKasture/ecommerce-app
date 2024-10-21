@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js 14 E-commerce App
 
-## Getting Started
+This repository contains a Next.js 14 application that serves as a frontend for an e-commerce platform. The app utilizes GraphQL for queries and Apollo Client. It is deployed on Vercel and fetches data from the default Saleor storefront.
 
-First, run the development server:
+## Features
+
+- Contains Product Listing Page and Product Details Page
+- Go to Product list Page via Explore Product Button and Go to Product Details Page on click on product card.
+- Fetches and displays e-commerce products using GraphQL.
+- Utilizes Apollo Client for efficient data fetching and state management.
+- Deployed on Vercel for easy access and scalability.
+
+## Technologies Used
+
+- **Next.js 14**: A React framework for building server-side rendered applications.
+- **Apollo Client**: A powerful GraphQL client for managing data.
+- **GraphQL**: A query language for APIs.
+- **Vercel**: A platform for frontend frameworks and static sites.
+
+## Getting Started Locally
+
+Follow these steps to set up and run the project locally:
 
 ```bash
+Step 1: Clone the Repository
+git clone https://github.com/RushikeshKasture/ecommerce-app.git
+cd your-repo-name
+
+Step 2: Install Dependencies
+npm install
+
+Step 3: Set Up Environment Variables
+Create a .env.local file in the root of your project and add the following environment variables:
+NEXT_PUBLIC_GRAPHQL_API=https://cloud.saleor.io/graphql/
+
+
+Step 4: Run the Development Server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+The app will run on http://localhost:3000.
+
+Step 5: Open Your Browser
+Navigate to http://localhost:3000 in your browser to see the application running.
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
