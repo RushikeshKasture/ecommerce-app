@@ -2,6 +2,12 @@
 
 This repository contains a Next.js 14 application that serves as a frontend for an e-commerce platform. The app utilizes GraphQL for queries and Apollo Client. It is deployed on Vercel and fetches data from the default Saleor storefront.
 
+## Project Structure
+
+- **Product Listing Page**: Displays a list of products with basic information like name, price, and thumbnail.
+- **Product Details Page**: Displays detailed information about a single product, including a larger image, description, and additional specifications.
+
+
 ## Features
 
 - Contains Product Listing Page and Product Details Page
@@ -13,8 +19,10 @@ This repository contains a Next.js 14 application that serves as a frontend for 
 ## Technologies Used
 
 - **Next.js 14**: A React framework for building server-side rendered applications.
-- **Apollo Client**: A powerful GraphQL client for managing data.
+- **Apollo Client**: A powerful GraphQL client for managing data & GraphQL queries..
 - **GraphQL**: A query language for APIs.
+- **Tailwind CSS** (v3.4.1): For utility-first CSS styling.
+- **TypeScript** (v5): For static typing in JavaScript.
 - **Vercel**: A platform for frontend frameworks and static sites.
 
 ## Getting Started Locally
@@ -32,7 +40,6 @@ npm install
 Step 3: Set Up Environment Variables
 Create a .env.local file in the root of your project and add the following environment variables:
 NEXT_PUBLIC_GRAPHQL_API=https://cloud.saleor.io/graphql/
-
 
 Step 4: Run the Development Server
 npm run dev
